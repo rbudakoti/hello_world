@@ -80,7 +80,7 @@ app.post('/ixn/triggers/hello-world/', trigger.edit );
 app.post('/fireEvent/:type', function( req, res ) {
     var data = req.body;
     var triggerIdFromAppExtensionInAppCenter = 'jb-hello-world-trigger-rashmibudakoti';
-    var JB_EVENT_API = 'https://www.exacttargetapis.com/interaction-experimental/v1/events';
+    var JB_EVENT_API = 'https://www.exacttargetapis.com/interaction/v1/events';
     var reqOpts = {};
 
     if( 'helloWorld' !== req.params.type ) {
